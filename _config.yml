@@ -1,5 +1,5 @@
 # Site settings
-title: Hux Blog
+title: Xic Blog
 SEOTitle: 黄玄的博客 | Hux Blog
 header-img: img/home-bg.jpg
 email: huxpro@gmail.com
@@ -59,7 +59,7 @@ kramdown:
       start_line: 1
 
 # Disqus settings
-disqus_username: hux
+disqus_username: godev-me
 
 # Netease settings
 netease_comment: false
