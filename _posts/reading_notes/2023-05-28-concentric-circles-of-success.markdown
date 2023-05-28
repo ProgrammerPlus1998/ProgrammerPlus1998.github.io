@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "李开复的成功同心圆理论"
+title:        "《做最好的自己》李开复的成功同心圆理论"
 subtitle:     "价值观、人生态度、行为的三层模型，启迪个人和职业发展"
 date:         2023-05-28 14:00:00
 header-style: text
