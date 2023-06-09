@@ -47,3 +47,4 @@ tags:
 
 # 总结
 李开复的成功同心圆理论为我们提供了一个清晰的成功路径。通过建立正确的价值观，形成积极的态度，再通过实际行动，我们可以逐步接近成功。这个理论不仅适用于职业发展，也适用于个人生活。因为无论在什么领域，正确的价值观、积极的态度和有效的行动，都是成功的关键。
+<iframe src="https://assets.pinterest.com/ext/embed.html?id=665547651204724084" height="790" width="345" frameborder="0" scrolling="no" ></iframe>
