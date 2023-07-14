@@ -2,7 +2,7 @@
 layout:       post
 title:        "歪歪扭扭的活着却不肯轻易倒下！"
 subtitle:     "The Song of Tenacity"
-header-img:   null
+header-img:   "img/in-post/head/2023-07-02-the-song-of-tenacity.jpg"
 date:         2023-07-02 00:00:00
 author:       "Xic"
 tags:
