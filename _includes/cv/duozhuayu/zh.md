@@ -1,8 +1,13 @@
 # 谢晨
+> 手机：+86 1851824**1998**  
+> 微信：ProgrammerPlus  
+> 邮箱：<a href="mailto:job@godev.me">job@godev.me</a>  
+> 状态：离职
+> 
 
 ## HR关键词
 
-全日制本科 ｜ 计算机相关专业 ｜ 3年开发经验 ｜Golang ｜ Python ｜ Kafka
+全日制本科（学信网） ｜ 计算机相关专业 ｜ 3年开发经验 ｜ Python ｜ Golang｜ Kafka
 
 ## 自我评价
 
@@ -17,18 +22,43 @@
 
 ## 技术栈
 
-* Backend: Node.js; Express; AWS lambda; serverless; GraphQL; RabbitMQ
-* Database: DynamoDB; MongoDB; Postgres; SQLite; AWS RDS; Redis
-* Frontend: react.js; SASS/CSS; d3.js
-* Chrome Extension: react.js; SASS/CSS;
+* **编程语言与开发框架**
+  * 坚实的Python编程基础，熟悉MVC等设计模式，熟练使用Django和FastAPI框架，对Flask和Tornado有深入了解。。
+  * 具备Go语言开发经验，了解其并发模型和内存管理，熟练掌握
+  * 熟悉VUE前端框架，HTML5、CSS3、JavaScript、php、jquery、Ajax等Web开发技术，了解BootStrap、ElementUI等前端UI框架。
+
+* **网络编程与API开发**
+  * 具有丰富的RESTful API接口规范使用经验。
+  * 熟悉Python网络编程，熟悉I/O多路复用，以及多线程，多进程，协程的使用。
+
+* **爬虫技术与反爬策略**
+  * 掌握Headers、IP/UA/cookie限制、懒加载、验证码、登录、js混淆等反爬机制，以及相应的反反爬策略。
+  * 能独立搭建Scrapy爬虫框架，配置参数、中间件，直至部署上线。
+
+* **数据库技术**
+  * 熟练使用MySQL等关系型数据库，擅长查询及事务处理，具备复杂SQL的性能调优能力。
+  * 对pgSQL分区表的使用方法和特性有所理解，
+  * 熟练使用 Elasticsearch 进行全文搜索，理解其底层原理。
+  * 熟练使用Redis等非关系型数据库，了解其持久化，事务锁等。
+  * 理解B树、B-树、B+树、B*树等各类索引存储结构。
+  
+  * 具备数据库高可用框架的基础知识。
+
+* **代码管理与操作系统**
+  * 熟练掌握git代码版本管理工具，理解分支管理和协同开发的工作流程，具有良好的代码管理习惯。
+  * 熟悉Linux基本原理和常用命令，能独立进行服务器环境搭建，了解Nginx和uWSGI优化，掌握基本的系统维护知识。
+
+* **机器学习**
+  * 了解监督模型、无监督模型、集成学习，分类模型、回归模型规则及其应用。
 
 
 ## 工作经历
 * <b>[pendanaan.com](https://pendanaan.com/)</b> 东南亚互联网金融独角兽 *(2022/08 - 2023/07)*  
   **后端开发 + 数仓**  
   我在后端开发和数据仓库的职责中展现了广泛的技能，包括数据库管理、报表优化、风控模型开发，以及优化数据追踪体系等。
-  * SQL语句运行速度提升10+倍，方便实时数据分析和报表，基于阿里云AnalyticDB MySQL，从0到1搭建分析数据库，并迁移数据。
-  * Apache DolphinScheduler平台 SQL跑批任务修改为使用阿里云ADB，根据需求新增报表及优化慢查询
+  * **数据库管理与报表优化**  
+    * 提升SQL语句运行速度10+倍，基于阿里云AnalyticDB MySQL，从0到1搭建分析数据库并迁移数据，实现实时数据分析和报表生成。
+    * 通过Apache DolphinScheduler平台将SQL跑批任务修改为使用阿里云ADB，根据需求新增报表及优化慢查询。
   * **风控模型**：参与贷前贷后模型变量开发，为风控模型提供参数变量，并记录变量值，提升公司风控管理水平。
   * **埋点数据落库**：优化了移动应用的数据追踪体系，Appsflyer埋点数据全量（1000w+/天）落库，使用nginx日志保存数据，并调研使用Firebase埋点备用方案流程。
   * **客服系统**：基于WhatsApp实现客服系统，记录客服聊天内容，实现催收批量发送模版消息、历史聊天记录查询，以提高客服效率和方便绩效考核。
@@ -36,8 +66,7 @@
   * **招聘&员工管理系统**：基于飞书多维表格，设计并实施HR系统自动化解决方案，包括面试时间同步生成等模块，以提高招聘效率。
 
   离职原因：工作中的任务碎片化程度较高，这使我难以深入研究和精进于某一特定领域。公司的工作节奏过度侧重于加班的过程而非实际产出，这与我对效率和结果导向的工作理念有所冲突。
-
----
+  <br><br>
 * <b>[jinse.com](www.jinse.com)</b> 国内头部区块链资讯平台 *(2020/12 - 2022/07)*  
   **后端开发工程师**  
   金色财经行情板块负责人，全程参与技术可行性分析、流程设计、数据库表设计、业务开发、测试到部署上线。主导并执行交易所行情等相关数据的清洗入库以及输出，向主流搜索引擎提供高并发、低延时的数字货币价格和K线图趋势数据。
@@ -51,8 +80,7 @@
   * **开源贡献**： 为满足业务需要，为GitHub [ormar](https://github.com/collerek/ormar) 开源项目增加数据类型。 [点击查看>>>](https://github.com/collerek/ormar/releases/tag/0.10.16)
 
   离职原因：监管政策变化，负责业务无法满足政策合规要求。
-
----
+  <br><br>
 * <b>鼓豆学堂</b> 面向 k12 的课外辅导和兴趣教育平台 *(2019/10 - 2020/11)*  
   **实习** 技术栈：Django
 
@@ -89,3 +117,8 @@
     element.style.backgroundColor = "#4CAF50"; // Original green
   }
 </script>
+
+<div style="text-align:center;">
+    <img src="/img/ChatGPT_logo.png" alt="ChatGPT logo" style="width:30px;height:30px;">
+    <p style="margin-top:-15px;">Assisted by ChatGPT-4</p>
+</div>
