@@ -2,7 +2,7 @@
 layout:       post
 title:        "优化 Python Redis 缓存：通用的Redis缓存”装饰器“"
 subtitle:     "The ultimate python function cache decorator"
-header-img:   "img/post/2023-07-02-redis-caching-strategy.png"
+header-img:   "img/in_post/head/2023-07-02-redis-caching-strategy.png"
 date:         2023-07-02 00:00:00
 author:       "Xic"
 tags:
