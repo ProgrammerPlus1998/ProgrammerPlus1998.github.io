@@ -1,38 +1,117 @@
-Hey, I am Huang, Xuan (a.k.a. _@huxpro_). I worked on the [React Team](https://beta.reactjs.org/community/meet-the-team#react-core) at <del>Facebook</del>Meta.
+# Xie Chen
+I am a curious and active thinker, with a strong passion for novel things and a love for exploring and trying new technologies and solutions. I dare to challenge myself, constantly expanding my comfort zone. I have excellent logical thinking abilities and I'm good at independent thinking and problem-solving. I advocate direct and honest communication, and while achieving the success of others, I realize my own value. I look forward to bringing new ways of thinking and problem-solving methods to the team with my innovative and collaborative spirit in a new work environment, contributing to the team while realizing my own value.
+> Mobile: +86 1851824**1998**  
+> Email: <a href="mailto:job@godev.me">job@godev.me</a>  
+> Status: Unemployed  
+> CSDN: https://blog.csdn.net/weixin_46491071?type=blog  
+> Blog: https://godev.me  
 
-I considered myself as a hybrid between a software engineer specifically into the programming languages theories and implementations domain (i.e. compiler, type system, type-based formal verification, virtual machine, runtime systems, garbage collection), and a creative technologiest deeply caring about many humanistic aspects (e.g. visual, sound, interaction) in UI and HCI in general.
+## HR Quick Screening Keywords
 
-I also worked on the [Hermes JavaScript Engine](https://hermesengine.dev/), some other projects under the [Reality Labs (Research)](https://tech.fb.com/ar-vr/), and [ReasonML](https://reasonml.github.io/) (now [ReScript](https://rescript-lang.org/)) efforts at Meta (Facebook).
+Full-time undergraduate (Student Network) | Computer-related majors | 3 years of development experience | Python | Golang | Kafka
 
-In the past, I worked on [Alitrip (Fliggy)](https://www.alitrip.com/) mobile and web apps under the [Alibaba Group](https://en.wikipedia.org/wiki/Alibaba_Group), found and lead front-end infrastructure team at an unicorn startup company [Beijing Weiying (a.k.a. WePiao, now acquired by Maoyan)](https://www.crunchbase.com/organization/beijing-weiying-technology), and helped [Ele.me (now acquired by Alibaba)](https://en.wikipedia.org/wiki/Ele.me) to upgrade their mobile web site into [the first influential PWA (progressive web app) in China](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509).
+## Skill Stack
+* **Programming languages and development frameworks**
+  * Solid foundation in Python programming, familiar with MVC and other design patterns, proficient in Django, FastAPI, Flask frameworks, and have some knowledge of Tornado.
+  * Experience in Go language development, understanding of its concurrency model and memory management, proficient in Gin framework.
+  * Familiar with the VUE front-end framework, HTML5, CSS3, JavaScript, php, jquery, Ajax, and other Web development technologies, understanding of BootStrap, ElementUI, and other front-end UI frameworks.
 
-I studied BA, Digital Media Art at [Communication University of China](https://en.wikipedia.org/wiki/Communication_University_of_China) and MS, Computer Science (with a focus on programming languages, mainly supervised by [Prof. Matthew Fluet](https://www.cs.rit.edu/~mtf/)) at [Rochester Institute of Technology](https://en.wikipedia.org/wiki/Rochester_Institute_of_Technology).
+* **Network programming and API development**
+  * Extensive experience with RESTful API interface specifications.
+  * Familiar with Python network programming, I/O multiplexing, as well as the use of multithreading, multiprocessing, and coroutines.
 
-##### Appearence
+* **Crawler technology and anti-crawler strategy**
+  * Master Headers, IP / UA / Cookie restrictions, lazy loading, CAPTCHA, login, js confusion, and other anti-crawler mechanisms, as well as corresponding anti-anti-crawler strategies.
+  * Able to independently build Scrapy crawler framework, configure parameters, middleware, and deploy it online.
 
-- [React Labs: What We've Been Working On – June 2022][12] · React Blog · 2022
-- [React Without Memo][11] · [React Conf 2021](https://conf.reactjs.org/)
-- [Toward Hermes being the Default][11] · React Native Blog · 2021
-- React Native 0.64 with Hermes for iOS · [The RN Show Podcast Ep #5](https://www.callstack.com/podcast-react-native-show) · 2021
-- [Upgrading to Progressive Web Apps][9] · [JSConf China Shanghai 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI Guangzhou 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux Beijing 2017
-- PWA Rehashing · Baidu HQ Beijing 2017
-- [Service Worker 101][5] · GDG DevFest Beijing 2016
-- [Progressive Web Apps][4] · QCon Shanghai 2016
-- Progressive Web App in my POV · GDG IO Redux Beijing 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript Modularization Journey][1] · 2015
+* **Database technology**
+  * Proficient in using MySQL and other relational databases, good at query and transaction processing, with the ability to tune complex SQL performance.
+  * Understand the usage methods and features of pgSQL partition tables.
+  * Proficient in using Elasticsearch for full-text search, understanding its underlying implementation principles.
+  * Proficient in using Redis and other non-relational databases, understand its persistence, transaction lock, etc.
+  * Understand B-tree, B-tree, B+ tree, B* tree and other types of index storage structures.
+  * Have basic knowledge of high-availability database framework.
 
-[1]: //huangxuan.me/2015/07/09/js-module-7day/
-[2]: //huangxuan.me/2015/12/28/css-sucks-2015/
-[3]: //huangxuan.me/2016/06/05/pwa-in-my-pov/
-[4]: //huangxuan.me/2016/10/20/pwa-qcon2016/
-[5]: //huangxuan.me/2016/11/20/sw-101-gdgdf/
-[6]: https://yanshuo.io/assets/player/?deck=58ac8598b123db0067292f92 "PWA Rehashing"
-[7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
-[8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
-[9]: //huangxuan.me/jsconfcn2017/
-[10]: https://reactnative.dev/blog/2021/10/26/toward-hermes-being-the-default
-[11]: https://youtu.be/lGEMwh32soc
-[12]: https://reactjs.org/blog/2022/06/15/react-labs-what-we-have-been-working-on-june-2022.html
+* **Code management and operating systems**
+  * Proficient in using git code version control tool, understand branch management and collaborative development workflow, have good code management habits.
+  * Familiar with the basic principles and commonly used commands of Linux, able to independently build server environment, understand Nginx and uWSGI optimization, master basic system maintenance knowledge.
+
+* **Machine Learning**
+  * Understand supervised models, unsupervised models, ensemble learning, classification models, regression model rules, and their applications.
+
+## Work Experience
+* <b>[pendanaan.com](https://pendanaan.com/)</b> Southeast Asia Internet Finance Unicorn *(2022/08 - 2023/07)*  
+  **Backend Development + Data Warehouse**  
+  I demonstrated a wide range of skills in my responsibilities in backend development and data warehousing, including database management, report optimization, risk control model development, and data tracking system optimization.
+  * **Database Management and Report Optimization**
+    * Increased SQL statement running speed by more than 10 times, built the analytic database from scratch based on Alibaba Cloud AnalyticDB MySQL and migrated data, achieving real-time data analysis and report generation.
+    * Modified SQL batch jobs on the Apache DolphinScheduler platform to use Alibaba Cloud ADB, added new reports according to demand, and optimized slow queries.
+  * **Risk Control Model**: Participated in the development of pre-loan and post-loan model variables, provided parameter variables for the risk control model, and recorded variable values, improving the company's risk control management level.
+  * **Buried Point Data Falling into Library**: Optimized the mobile application data tracking system, Appsflyer buried point data fell into the library in full (10 million+/day), used Nginx log to save data, and investigated the process of using Firebase buried point as a backup plan.
+  * **Customer Service System**: Implemented a customer service system based on WhatsApp, recorded customer service chat content, implemented the bulk sending of collection template messages, historical chat records query, to improve customer service efficiency and facilitate performance assessment.
+  * **Exception Alert**: Used Grafana to execute SQL periodically to monitor system operation status, push exceptions to the API service, convert them into template format, and push them to the relevant group.
+  * **Recruitment & Employee Management System**: Based on Lark multi-dimensional form, designed and implemented an HR system automation solution, including interview time synchronization generation and other modules, to improve recruitment efficiency.
+
+  Reason for leaving: The task fragmentation in the work is too high, which makes it difficult for me to go deep into and excel in a specific field. The company's work rhythm overemphasizes the process of working overtime rather than the actual output, which conflicts with my work philosophy of efficiency and result-oriented.
+  <br><br>
+* <b>[jinse.com](www.jinse.com)</b> Leading domestic blockchain information platform *(2020/12 - 2022/07)*  
+  **Backend Development Engineer**  
+  In charge of the financial market section of Jinse Finance, involved in technical feasibility analysis, process design, database table design, business development, testing, and deployment. Led and implemented the cleaning, storage, and output of exchange market data and other related data, providing high-concurrency, low-latency digital currency prices and K-line trend data to mainstream search engines.
+  * **Data Acquisition and Cleaning**: Reviewed the API documents of exchanges, obtained minute-level market data from the exchanges via WebSocket protocol, cleaned it into candlestick chart format, and pushed it to the message queue.
+  * **Data Aggregation and Display**: Pulled data from the message queue, aggregated it to generate data of different time granularity, and stored it in database partition tables; Provided real-time updated K-lines to web and app users through WebSocket services.
+  * **Performance Optimization**: Improved the concurrency of the API service, added caches for APIs with high access volume, used PostgreSQL partition tables, reduced database access frequency, ensured the response time of commonly used interfaces did not exceed 200ms, and broke through 1000 QPS.
+  * **Feature Development**:
+    * Implemented notifications for drastic fluctuations and integer broadcasts for specific cryptocurrencies, pushing these to the news section and as app pop-up notifications.
+    * Provided a cryptocurrency market value leaderboard, periodically calculating cryptocurrency market values and rankings, and storing them in the database.
+    * Aggregated the prices of cryptocurrencies from multiple exchanges, providing mainstream digital currency trends for high concurrency search engines. [Click to view>>>](https://m.baidu.com/s?word=BTC)
+  * **Open Source Contribution**: To meet business needs, added data types to the GitHub [ormar](https://github.com/collerek/ormar) open source project. [Click to view>>>](https://github.com/collerek/ormar/releases/tag/0.10.16)
+
+  Reason for leaving: Regulatory policy changes meant that the business I was responsible for could not meet policy compliance requirements.
+  <br><br>
+* <b>Gu Dou Xue Tang</b> Extracurricular tutoring and interest education platform for K-12 *(2019/10 - 2020/11)*  
+  **Internship** Tech Stack: Django
+
+
+## Education
+* **Neusoft Institute of Information, Dalian** Department of Computer Science and Technology, IoT Engineering Full-time Undergraduate *(2016.09 - 2020.06)*
+
+## Looking for a Company with the Following Characteristics
+1. **Leadership**: The company's leadership team has a clear vision and mission, is able to effectively lead the company to achieve its strategic goals, and has a positive impact on employees, encouraging and motivating them to succeed.
+2. **Quality of Product or Service**: I hope the company provides high-quality products or services that can meet customer needs and exceed their expectations, allowing me to provide the best experience for our customers.
+3. **Corporate Culture**: The company I expect should have a positive corporate culture, which encourages innovation, supports team collaboration, respects individual differences, and advocates honesty and fairness.
+4. **Contribution to Society**: Pursuing long-termism, adopting sustainable business practices.
+
+<a href="/file/cv/duozhuayu/resumd_en.pdf" download="XieChen_PythonDev_3YrsExp">
+  <button id="downloadButton" style="
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition-duration: 0.4s;
+  " onmouseover="hoverOn(this)" onmouseout="hoverOff(this)">
+    Click to download PDF resume
+  </button>
+</a>
+
+<script>
+  function hoverOn(element) {
+    element.style.backgroundColor = "#45a049"; // Darker green
+  }
+
+  function hoverOff(element) {
+    element.style.backgroundColor = "#4CAF50"; // Original green
+  }
+</script>
+
+<div style="text-align:center;">
+    <img src="/img/ChatGPT_logo.png" alt="ChatGPT logo" style="width:30px;height:30px;">
+    <p style="margin-top:-15px;">Assisted by ChatGPT-4</p>
+</div>
