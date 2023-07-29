@@ -6,6 +6,7 @@ header-img:   "img/in-post/head/2023-07-02-redis-caching-strategy.png"
 date:         2023-07-02 00:00:00
 author:       "Xic"
 tags:
+    - 数据库
     - Python
     - Redis
 ---
