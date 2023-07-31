@@ -58,7 +58,7 @@ print(f"Execution time: {end - start} seconds")
 尽管 Python 的 GIL 限制了多线程的并行执行，但我们仍有方法绕过这个问题，充分利用多核处理器。以下是其中的几种方法：
 
 - **多进程**：每个 Python 进程都有自己的 Python 解释器和 GIL，因此多进程可以在多核处理器上并行执行。Python的 `multiprocessing` 模块就可以创建多进程。
-- **本地扩展**：C或C++编写的Python扩展可以在C级别的代码中释放 GIL。这使得扩展可以在多线程中并行执行，从而绕过GIL的限制。`NumPy` 和 ~~SciPy~~ 等科学计算库就利用了这个特性。
+- **本地扩展**：C或C++编写的Python扩展可以在C级别的代码中释放 GIL。这使得扩展可以在多线程中并行执行，从而绕过GIL的限制。`NumPy` 和 `SciPy` 等科学计算库就利用了这个特性。
 - **Jython和IronPython**：这些 Python 的替代实现没有GIL，因此它们的多线程代码可以在多核处理器上并行执行。然而，由于各种原因，它们的使用并不广泛。
 
 下面，我们将更详细地讨论利用多线程、多进程和协程处理并发任务的不同策略。
@@ -108,6 +108,7 @@ print(f"Downloaded {len(urls)} in {end_time - start_time} seconds")
 import multiprocessing
 import time
 
+
 def cpu_bound_task(n):
     # CPU密集型任务
     count = 0
@@ -115,12 +116,17 @@ def cpu_bound_task(n):
         count += i
     return count
 
-start_time = time.time()
-pool = multiprocessing.Pool()
-results = pool.map(cpu_bound_task, [10**8] * multiprocessing.cpu_count())
-end_time = time.time()
 
-print(f"Execution time: {end_time - start_time} seconds")
+if __name__ == '__main__':
+    start_time = time.time()
+    pool = multiprocessing.Pool()
+    results = pool.map(cpu_bound_task, [10**8] * multiprocessing.cpu_count())
+    pool.close()
+    pool.join()
+    end_time = time.time()
+
+    print(f"Execution time: {end_time - start_time} seconds")
+
 ```
 
 这个示例中，我们创建了一个进程池，并并发执行多个 CPU 密集型任务。由于每个进程有自己的GIL，所以它们可以在多核处理器上并行执行，从而充分利用多核性能。
