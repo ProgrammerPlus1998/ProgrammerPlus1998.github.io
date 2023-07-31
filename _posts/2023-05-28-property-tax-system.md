@@ -2,7 +2,7 @@
 layout:       post
 title:        "全球房产税制度：一窥世界各国的征税方式"
 subtitle:     "How will property taxes change our lives?"
-header-img:   "img/post/property-tax-system.png"
+header-img:   "img/in-post/head/2023-05-28-property-tax-system.png"
 date:         2023-05-28 15:00:00
 author:       "Xic"
 tags:
