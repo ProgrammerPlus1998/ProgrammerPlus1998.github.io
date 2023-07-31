@@ -2,7 +2,7 @@
 layout:       post
 title:        "解决Python GIL问题：多线程、多进程和协程的策略"
 subtitle:     "Python Global Interpreter Lock"
-header-img:   "img/in-post/head/2023-07-02-redis-caching-strategy.png"
+header-img:   "img/in-post/head/2023-07-31-python-global-interpretation-lock.jpg"
 date:         2023-07-31 00:00:00
 author:       "Xic"
 tags:
@@ -18,7 +18,7 @@ tags:
 # 什么是Python GIL
 
 Python 全局解释器锁（GIL），是 Python 解释器设计的一个重要部分。由于历史原因和设计选择，Python 的内存管理不是线程安全的。为了避免在处理多线程时出现冲突，Python 解释器采用了一个全局解释器锁。这意味着在任何时间点，只能有一个线程在 Python 解释器中执行字节码。即使在多核处理器的环境下，Python 也无法利用多个处理器来并行执行多线程代码。
-![全局解释锁](/img/article-pic/Untitled-2023-07-30-1645.png)
+![全局解释锁](/img/in-post/article-pic/Untitled-2023-07-30-1645.png)
 
 # Python GIL的影响
 
