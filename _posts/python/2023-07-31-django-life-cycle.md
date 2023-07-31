@@ -77,5 +77,5 @@ def example_view(request):
 理解Django的生命周期是我们更深入理解和使用Django的关键。从用户发起请求，到服务器返回响应，每一步都是精心设计，以使我们的Web应用更加高效，强大和灵活。
 
 # 参考资料
-📄[Django官方文档](https://docs.djangoproject.com/en/3.2/)
-🌍[WSGI————维基百科](https://zh.wikipedia.org/wiki/Web%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%BD%91%E5%85%B3%E6%8E%A5%E5%8F%A3)
+📄[Django官方文档](https://docs.djangoproject.com/en/3.2/)  
+🌍[WSGI———维基百科](https://zh.wikipedia.org/wiki/Web%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%BD%91%E5%85%B3%E6%8E%A5%E5%8F%A3)  
