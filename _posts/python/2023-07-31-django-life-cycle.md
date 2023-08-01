@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "Django的生命周期：一次请求的旅程"
-subtitle:     "Python Global Interpreter Lock"
+subtitle:     "The lifecycle of a Django request"
 header-img:   "img/in-post/head/2023-07-31-python-global-interpretation-lock.jpg"
 date:         2023-07-31 00:00:00
 author:       "Xic"
@@ -48,6 +48,32 @@ urlpatterns = [
 
 # 五、 Django中间件
 在请求到达视图之前，请求还需要经过一系列的中间件。中间件是一种轻量级的插件系统，可以全局改变Django的输入或输出，比如处理会话和身份验证，或者跟踪网站的访问者。
+
+```python
+# 创建一个中间件
+class SimpleMiddleware:
+    def __init__(self, get_response):
+        self.get_response = get_response
+
+    def __call__(self, request):
+        # 在视图（以及可能的其他中间件）处理请求之前的代码
+
+        response = self.get_response(request)
+
+        # 在视图（以及可能的其他中间件）处理请求之后的代码
+        response['X-Middleware-Test'] = 'hello, godev.me'
+
+        return response
+```
+
+```python
+# 将中间件添加到配置列表中，较前的中间件会优先处理请求，并在其他中间件和视图之后处理响应。
+MIDDLEWARE = [
+    # ...
+    'myapp.middleware.SimpleMiddleware',
+    # ...
+]
+```
 
 # 六、 视图处理
 视图是Django处理请求的核心。每个视图都是一个Python函数（或者类），接收web请求并返回web响应。
