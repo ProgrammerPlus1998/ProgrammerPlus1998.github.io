@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "并发的艺术：Go语言中的GMP调度模型解析"
-subtitle:     "How will property taxes change our lives?"
+subtitle:     "The Art of Concurrency: Analysis of GMP Scheduling Model in Golang"
 header-img:   "img/in-post/head/2023-08-01-golang-gmp-scheduling-model.jpeg"
 date:         2023-08-01 00:00:00
 author:       "Xic"
@@ -24,7 +24,17 @@ Go语言，也称为Golang，是由Google开发的一门静态类型，编译型
 
 ## Go的并发编程特性
 
-Go的并发是通过Goroutine和Channel来实现的。Goroutine类似于线程，但它消耗的资源少得多。Channel则提供了一种安全地在Goroutine之间共享数据的方式。
+Go语言的并发编程特性主要表现在Goroutine和Channel两个方面。这两者是Go语言设计者为解决并发问题所特别设计的工具，它们的设计理念源于CSP（Communicating Sequential Processes）并发模型。
+
+1. **Goroutine**
+
+   Goroutine可以看作是一种轻量级的线程，它们在Go语言的运行时环境中被调度和执行。相较于传统的线程，Goroutine的创建和销毁的开销更小，更易于管理。每个Go程序至少有一个Goroutine（主Goroutine）在运行。通过并发的Goroutines，Go程序可以同时处理多个任务，从而提高程序的性能和响应能力。
+
+2. **Channel**
+
+   Channel是Go语言提供的一种数据结构，它提供了一种强大的、安全的在Goroutines之间通信和同步的方式。使用Channel，我们可以在一个Goroutine中发送数据，而在另一个Goroutine中接收数据，这样可以实现Goroutines之间的数据共享。通过Channel的发送和接收操作，Goroutines之间还可以进行同步。这种"**以通信来共享内存**"的思想，有别于传统的"通过共享内存来通信"的模式，让并发程序的设计更加简洁和安全。
+
+Go语言的并发特性允许开发者更简单，更直观地编写并发程序。相较于其他语言，使用Goroutine和Channel编写并发程序不仅更为直观和简洁，也更安全，更容易避免并发程序中常见的问题，如竞争条件、死锁等。这使得Go语言在需要大规模并发的场景下，如网络编程、云计算等，表现出极高的生产力。
 
 ## Goroutine
 
@@ -58,30 +68,39 @@ func main() {
 
 ## 理解GMP调度模型的构成
 
+![GMP模型构成](/img/in-post/article-pic/gmp_storage_structure.png)
+
 GMP模型由三部分构成：Goroutine(G)，系统线程(M)，调度器(P)。
 
 > **Goroutine(G)**：在Go语言中，每个并发的任务都被称为一个Goroutine。Goroutine是用户级线程，而不是系统线程，所以它的创建、销毁和切换的成本低于系统线程。   
 > **系统线程(M)**： 是内核级线程，每个系统线程都对应一个内核级线程。  
-> **调度器(P)**：负责调度，它保存了一组Goroutine。P的数量默认等于CPU的数量。  
-
-![GMP模型构成](/img/in-post/article-pic/gmp_storage_structure.png)
+> **调度器(P)**：负责调度，它保存了一组Goroutine。P的数量默认等于CPU的数量。
 
 # GMP调度模型的详细工作流程
 
-在GMP模型中，M执行G需要一个P的上下文环境。每个P都有一个本地的Goroutine队列，M需要从P关联的G队列中获取G去执行，当M关联的P没有G可运行时，M会尝试从其他P的队列中偷取G来运行。
+![GMP调度流程](/img/in-post/article-pic/gmp_scheduling_process.png)
 
-## 创建Goroutine
+1. **Goroutine创建**
 
-当新的Goroutine被创建时，会先将其放在当前P的本地队列中，如果P的本地队列已满，那么会把新的Goroutine放到全局队列中。
+   当一个新的Goroutine被创建时，它首先会被放入P的本地队列中。如果本地队列已满或P的数量小于 `GOMAXPROCS`，新的Goroutine会被放入全局队列中。如果此时有空闲的M，那么运行时系统会唤醒或创建一个M来执行这个新的Goroutine。
 
-## 调度执行
+2. **Goroutine执行**
 
-M从其关联的P的队列中获取G执行，如果P的队列为空，则尝试从全局队列或者其它P的队列中偷取G执行。
+   每个M会从与其关联的P的本地队列中取出一个Goroutine来执行。如果本地队列为空，M会尝试从全局队列或者其它P的队列中偷取Goroutine。
 
-## G的阻塞与唤醒
+3. **Goroutine阻塞**
 
-如果G因为系统调用或者等待资源而阻塞，那么M会将G置为等待状态，然后去P的队列中获取新的G执行。当阻塞的G被唤醒时，会将G放入全局队列或者其它P的队列中，然后唤醒或创建一个M去执行这个G。
+   如果一个Goroutine在执行过程中进行了阻塞操作，如I/O操作或系统调用，这个Goroutine会被移到与这个操作相关的阻塞列表中，与此同时，M和P会解除关联，M会尝试去执行其它的Goroutine。
 
+4. **Goroutine唤醒**
+
+   当阻塞的Goroutine被唤醒时，如I/O操作完成或系统调用返回，它会被放入全局队列或者P的本地队列中。如果有空闲的M，运行时系统会唤醒或创建一个M来执行这个Goroutine。否则，它将在队列中等待，直到有M可用。
+
+5. **线程的管理**
+
+   Go运行时系统会动态地创建和销毁M，以适应程序的需要。同时，为了防止创建过多的线程，系统会限制M的最大数量。当M的数量达到上限，新的Goroutine会被放入队列中等待。当有M空闲出来，系统会从队列中取出一个Goroutine来执行。
+
+通过以上的描述，我们可以看出GMP模型是如何有效地管理和调度Goroutine的。这个模型通过将并发和并行结合起来，充分利用了多核CPU的性能，同时也提供了高效的并发编程模型。
 # GMP调度模型的优势与劣势
 
 ## 优势
@@ -97,3 +116,5 @@ M从其关联的P的队列中获取G执行，如果P的队列为空，则尝试�
 
 GMP调度模型是Go语言并发编程的基础。通过深入理解GMP模型的工作原理，我们可以更好地利用Go的并发特性，编写出更高效的并发程序。
 
+# 参考资料
+[Scheduling In Go:Part II - Go Scheduler](https://www.ardanlabs.com/blog/2018/08/scheduling-in-go-part2.html)
