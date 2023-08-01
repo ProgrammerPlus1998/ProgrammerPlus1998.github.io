@@ -4,7 +4,7 @@ title:        "【转】人生的意义"
 subtitle:     "[RT] The meaning of life"
 date:         2023-08-02 00:00:00
 header-style: text
-author:       "Xic"
+author:       "@宏桑hit"
 tags:
     - 读书笔记
     - 转载
