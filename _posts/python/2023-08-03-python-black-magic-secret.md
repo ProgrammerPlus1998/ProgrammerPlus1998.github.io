@@ -70,6 +70,7 @@ asyncio.run(main())
 全局解释器锁，或GIL，是Python解释器的一个重要特性，其主要作用是保证在任意时刻只有一个线程在执行Python字节码。这意味着即使在多核CPU的环境下，Python的多线程也不能实现真正的并行计算。
 
 在处理CPU密集型任务时，使用多进程（multiprocessing模块）或者其他并行技术（如JIT编译器PyPy，或者Cython这类的Python扩展）可以绕过GIL的限制。
+
 [>>>解决Python GIL问题：多线程、多进程和协程的策略](/2023/07/31/python-global-interpretation-lock/)
 # 描述符
 
