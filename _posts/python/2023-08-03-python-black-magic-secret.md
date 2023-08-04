@@ -96,6 +96,8 @@ obj.attribute
 ```
 在这个例子中，当我们访问 `obj.attribute` 时，`Descriptor` 类的 `__get__` 方法被调用。描述符在Python的很多地方都有使用，比如@property和@classmethod装饰器就是利用了描述符。
 
+🔗[解密Python的神秘之门，深入理解描述符](/2023/08/04/python-descriptor/)
+
 # 元类
 
 元类是Python的一个深层次特性，它们是类的类。元类控制类的创建，你可以使用元类来修改或增强类的行为。
