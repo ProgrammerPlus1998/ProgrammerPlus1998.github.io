@@ -3,7 +3,7 @@ layout:       post
 title:        "解密Python的神秘之门，深入理解描述符"
 subtitle:     "Decipher the mysterious door of Python and deeply understand descriptors"
 header-img:   "img/in-post/head/2023-07-31-python-global-interpretation-lock.jpg"
-date:         2023-08-03 00:00:00
+date:         2023-08-04 00:00:00
 author:       "Xic"
 tags:
     - Python
