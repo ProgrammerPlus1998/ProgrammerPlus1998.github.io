@@ -1,7 +1,7 @@
 ---
 layout:       post
-title:        "Python生成器：性能优化和内存管理的利器"
-subtitle:     "Python generators: a powerful tool for performance optimization and memory management"
+title:        "魔法师的新咒语：Python元类的魅力与挑战"
+subtitle:     "The Sorcerer's New Spell: The Charm and Challenges of Python Metaclasses"
 header-img:   "img/in-post/head/2023-07-31-python-global-interpretation-lock.jpg"
 date:         2023-08-04 00:00:00
 author:       "Xic"
