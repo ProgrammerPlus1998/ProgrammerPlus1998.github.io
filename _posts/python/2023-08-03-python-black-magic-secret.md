@@ -71,7 +71,7 @@ asyncio.run(main())
 
 在处理CPU密集型任务时，使用多进程（multiprocessing模块）或者其他并行技术（如JIT编译器PyPy，或者Cython这类的Python扩展）可以绕过GIL的限制。
 
-[>>>解决Python GIL问题：多线程、多进程和协程的策略](/2023/07/31/python-global-interpretation-lock/)
+📄 [解决Python GIL问题：多线程、多进程和协程的策略](/2023/07/31/python-global-interpretation-lock/)
 # 描述符
 
 描述符是Python的一个高级特性，它允许程序员自定义属性的访问行为。描述符是实现了某些特殊方法（`__get__`, `__set__`, 或 `__delete__`）的类。这些方法将在属性访问，设定或删除时被调用。
