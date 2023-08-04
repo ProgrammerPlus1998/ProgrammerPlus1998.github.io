@@ -33,6 +33,8 @@ print(greet('Alice'))
 ```
 在这个例子中，我们创建了一个打印日志的装饰器，用来记录函数调用的信息。装饰器在Web框架（如Flask和Django）中非常常见，用于路由声明、权限检查等。
 
+🔗[Python装饰器用法大全：初学者到专家的完全指南](/2023/08/04/python-decorator/)
+
 # 生成器
 
 生成器让你能够写出惰性求值的代码，它们仅在需要时产生值。生成器函数看起来就像一个常规函数，但当它们要生成一个结果序列时，它们使用yield语句，而不是return。
@@ -71,7 +73,7 @@ asyncio.run(main())
 
 在处理CPU密集型任务时，使用多进程（multiprocessing模块）或者其他并行技术（如JIT编译器PyPy，或者Cython这类的Python扩展）可以绕过GIL的限制。
 
-📄 [解决Python GIL问题：多线程、多进程和协程的策略](/2023/07/31/python-global-interpretation-lock/)
+🔗[解决Python GIL问题：多线程、多进程和协程的策略](/2023/07/31/python-global-interpretation-lock/)
 # 描述符
 
 描述符是Python的一个高级特性，它允许程序员自定义属性的访问行为。描述符是实现了某些特殊方法（`__get__`, `__set__`, 或 `__delete__`）的类。这些方法将在属性访问，设定或删除时被调用。
