@@ -2,7 +2,7 @@
 layout:       post
 title:        "魔法师的新咒语：Python元类的魅力与挑战"
 subtitle:     "The Sorcerer's New Spell: The Charm and Challenges of Python Metaclasses"
-header-img:   "img/in-post/head/2023-07-31-python-global-interpretation-lock.jpg"
+header-img:   "img/in-post/head/2023-08-04-python-metaclasses.png"
 date:         2023-08-04 00:00:00
 author:       "Xic"
 tags:

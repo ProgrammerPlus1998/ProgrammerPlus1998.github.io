@@ -107,3 +107,4 @@ class Meta(type):
     def __init__(cls, name, bases, attrs):
         attrs['greeting']
 ```
+🔗[魔法师的新咒语：Python元类的魅力与挑战](/2023/08/04/python-metaclasses/)
