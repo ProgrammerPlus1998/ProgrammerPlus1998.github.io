@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "Python黑魔法揭秘：装饰器、生成器、异步编程、GIL、描述符和元类"
+title:        "🔥Python黑魔法揭秘：装饰器、生成器、异步编程、GIL、描述符和元类"
 subtitle:     "Demystifying python black magic"
 header-img:   "img/in-post/head/2023-07-31-python-global-interpretation-lock.jpg"
 date:         2023-08-03 00:00:00
