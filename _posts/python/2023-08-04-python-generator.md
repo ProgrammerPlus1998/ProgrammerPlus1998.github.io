@@ -8,7 +8,7 @@ author:       "Xic"
 tags:
     - Python
     - 生成器
-    - python之巅
+    - python进阶
 ---
 
 # 引言
