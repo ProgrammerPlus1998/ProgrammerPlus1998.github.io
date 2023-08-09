@@ -173,7 +173,7 @@ file, _ := os.Open("file.txt")
 bytes, _ := ReadAll(file)
 
 // 从网络读取
-resp, _ := http.Get("https://www.example.com")
+resp, _ := http.Get("https://godev.me")
 bytes, _ = ReadAll(resp.Body)
 
 // 从字符串读取
